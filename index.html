@@ -354,7 +354,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .elementor-tab-title a {
 	padding:10px;
 }		</style>
-			</head>
+			<link rel="stylesheet" href="https://chatist.nyc3.cdn.digitaloceanspaces.com/style.css">
+</head>
 <body data-rsssl=1 
 
 
@@ -2262,18 +2263,7 @@ var uniqueId = 2181041684847169993,
 		</section>
 				</div>
 		
-<script type="text/javascript">
-            var _smartsupp = _smartsupp || {};
-            _smartsupp.key = '0d0bfbffa4c8e255dd0bc714e7d9674bf61be56b';
-_smartsupp.cookieDomain = 'varsovia.hu';
-_smartsupp.sitePlatform = 'WP 6.7.4';
-window.smartsupp||(function(d) {
-                var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-                s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-                c.type='text/javascript';c.charset='utf-8';c.async=true;
-                c.src='//www.smartsuppchat.com/loader.js';s.parentNode.insertBefore(c,s);
-            })(document);
-            </script>		<div data-elementor-type="popup" data-elementor-id="47262" class="elementor elementor-47262 elementor-location-popup" data-elementor-settings="{&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:{&quot;page_load_delay&quot;:8,&quot;page_load&quot;:&quot;yes&quot;,&quot;exit_intent&quot;:&quot;yes&quot;},&quot;timing&quot;:{&quot;schedule_start_date&quot;:&quot;2025-09-29 12:00&quot;,&quot;schedule_end_date&quot;:&quot;2025-10-13 18:00&quot;,&quot;schedule&quot;:&quot;yes&quot;,&quot;schedule_timezone&quot;:&quot;site&quot;,&quot;schedule_server_datetime&quot;:&quot;2026-01-06 21:19:08&quot;}}" data-elementor-post-type="elementor_library">
+		<div data-elementor-type="popup" data-elementor-id="47262" class="elementor elementor-47262 elementor-location-popup" data-elementor-settings="{&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:{&quot;page_load_delay&quot;:8,&quot;page_load&quot;:&quot;yes&quot;,&quot;exit_intent&quot;:&quot;yes&quot;},&quot;timing&quot;:{&quot;schedule_start_date&quot;:&quot;2025-09-29 12:00&quot;,&quot;schedule_end_date&quot;:&quot;2025-10-13 18:00&quot;,&quot;schedule&quot;:&quot;yes&quot;,&quot;schedule_timezone&quot;:&quot;site&quot;,&quot;schedule_server_datetime&quot;:&quot;2026-01-06 21:19:08&quot;}}" data-elementor-post-type="elementor_library">
 					<section class="elementor-section elementor-top-section elementor-element elementor-element-bbed862 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bbed862" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
@@ -2643,6 +2633,42 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 	</a>
 </div> -->
 
+<div id="chatist-root"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 999990;">
+</div>
+
+<script src="https://chatist.nyc3.cdn.digitaloceanspaces.com/widget.js"></script>
+
+<script>
+    function initWidget() {
+        if (window.ChatWidget && window.ChatWidget.init) {
+            window.ChatWidget.init({
+                apiKey: 'web-mrnUH4k2RhzkVAnaRKPNqxRd5zt9UQj2SI60mJL8b7476f76',
+                // originalId: 'user-123',
+                // email: 'user@example.com',
+                theme: {
+                    primaryColor: '#667eea',
+                    secondaryColor: '#764ba2',
+                    companyName: 'Your Company',
+                },
+                launcherPosition: 'bottom-right',
+                pusherConfig: {
+                    pusherKey: 'okbzgwe4pvzhay6j5dk8',
+                    wsHost: 'ws.chatist.com',
+                    wsPort: 443,
+                }
+            });
+        } else {
+            setTimeout(initWidget, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initWidget);
+    } else {
+        initWidget();
+    }
+</script>
 </body>
 </html>
 
